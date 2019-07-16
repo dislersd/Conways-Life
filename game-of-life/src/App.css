@@ -1,8 +1,8 @@
 .box {
-    border: 1px solid black;
+    border: 1px solid rgb(106, 114, 113);
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 15px;
+    height: 15px;
     margin-left: -1px;
     margin-bottom: -1px;
 }
@@ -15,12 +15,47 @@
     background-color: rgb(43, 55, 59);
 }
 
+.box:hover {
+    opacity: 0.2;
+}
+
+.center {
+    margin: auto;
+    display: table;
+    margin-top: 10px;
+}
+
 .grid {
-    width: 15rem;
+    width: 150px;
     line-height: 0;
     margin: auto;
     box-shadow: 0 0 12px #000;
-    margin-top: 2rem;
+    margin-top: 20px;
+}
+
+.main {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;   
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 221, 170);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(17, 226, 146);
 }
 
 h1, h2, h3, h4 {
@@ -30,4 +65,8 @@ h1, h2, h3, h4 {
     width: 50%;
     margin-top: 10px;
   }
+
+h4 {
+    margin-top: 0;
+}
   

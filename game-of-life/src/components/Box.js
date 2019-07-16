@@ -1,10 +1,10 @@
 import React from "react";
 
 function Box({ row, col, boxClass, id, selectBox }) {
-  const selectBoxTwo = () => {
+  const changeBox = () => {
     selectBox(row, col);
   };
 
-  return <div className={boxClass} id={id} onClick={selectBoxTwo} />;
+  return <div className={boxClass} id={id} onClick={changeBox} />;
 }
 export default Box;

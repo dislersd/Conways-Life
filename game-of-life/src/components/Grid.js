@@ -1,8 +1,9 @@
 import React from "react";
 import Box from "./Box";
 
-function Grid({ cols, rows, gridFull, selectBox }) {
-  var width = (cols * 14);
+function Grid({ cols, rows, grid, selectBox }) {
+  // width is collumns multiplied by 16 (becuae boxes are 16px wide)
+  const width = cols * 16;
   var rowsArr = [];
   var boxClass = "";
 
@@ -10,11 +11,12 @@ function Grid({ cols, rows, gridFull, selectBox }) {
     for (var j = 0; j < cols; j++) {
       let boxId = `${i}_${j}`;
 
-      boxClass = gridFull[i][j] ? "box on" : "box off";
+      boxClass = grid[i][j] ? "box on" : "box off";
       rowsArr.push(
         <Box
           boxClass={boxClass}
           key={boxId}
+          boxId={boxId}
           row={i}
           col={j}
           selectBox={selectBox}
