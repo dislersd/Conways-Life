@@ -1,8 +1,12 @@
+.page-container {
+    display: flex;
+}
+
 .box {
     border: 1px solid rgb(106, 114, 113);
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 8px;
     margin-left: -1px;
     margin-bottom: -1px;
 }
@@ -19,27 +23,40 @@
     opacity: 0.2;
 }
 
-.center {
-    margin: auto;
-    display: table;
-    margin-top: 10px;
-}
-
 .grid {
     width: 150px;
     line-height: 0;
-    margin: auto;
-    box-shadow: 0 0 12px #000;
-    margin-top: 20px;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .main {
     display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.words {
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.words p {
+    margin: 20px;
+    line-height: 1.5;
 }
 
 .buttons {
     display: flex;
-    flex-direction: column;   
+    margin-left: 20px;
 }
 
 button {
@@ -50,12 +67,15 @@ button {
     cursor: pointer;
     border: none;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     font-size: 16px;
+    border-radius: 10px;
+    width: 120px;
+    margin-left: 0;
 }
 
 button:hover {
-    background-color: rgb(17, 226, 146);
+    background-color: rgb(233, 148, 108);
 }
 
 h1, h2, h3, h4 {
@@ -66,7 +86,13 @@ h1, h2, h3, h4 {
     margin-top: 10px;
   }
 
-h4 {
-    margin-top: 0;
+h2 {
+    margin: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+li {
+    margin: 10px auto;
 }
   
