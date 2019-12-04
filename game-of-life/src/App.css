@@ -1,98 +1,121 @@
 .page-container {
-    display: flex;
+  display: flex;
+}
+
+@media (max-width: 1027px) {
+  .page-container {
+    flex-direction: column;
+  } 
 }
 
 .box {
-    border: 1px solid rgb(106, 114, 113);
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-left: -1px;
-    margin-bottom: -1px;
+  /* border: 1px solid rgb(106, 114, 113); */
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  /* margin-left: -1px; */
+  /* margin-bottom: -1px; */
 }
 
 .on {
-    background-color: rgb(83, 226, 167);
+  background-color: rgb(83, 226, 167);
 }
 
 .off {
-    background-color: rgb(43, 55, 59);
+  background-color: rgb(43, 55, 59);
 }
 
 .box:hover {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .grid {
-    width: 150px;
-    line-height: 0;
-    margin: 20px;
-    margin-bottom: 5px;
+  width: 150px;
+  line-height: 0;
+  margin: 20px;
+  margin-bottom: 5px;
 }
 
 .grid-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .main {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .words {
-    width: 100%;
-    margin-top: 40px;
-    margin-right: 20px;
+  width: 100%;
+  margin-top: 40px;
+  margin-right: 20px;
 }
 
-.words p {
-    margin: 20px;
-    line-height: 1.5;
+.words p,
+a {
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.words a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(233, 148, 108);
+}
+
+.words a:hover {
+  color: rgb(145, 221, 170);
+}
+
+.instructions {
+  margin: 20px;
 }
 
 .buttons {
-    display: flex;
-    margin-left: 20px;
+  display: flex;
+  margin-left: 20px;
 }
 
 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(145, 221, 170);
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    width: 120px;
-    margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(145, 221, 170);
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 120px;
+  margin-left: 0;
 }
 
 button:hover {
-    background-color: rgb(233, 148, 108);
+  background-color: rgb(233, 148, 108);
 }
 
-h1, h2, h3, h4 {
-    color: rgb(235, 117, 63);
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    margin-top: 10px;
-  }
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(235, 117, 63);
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
 
 h2 {
-    margin: 20px;
-    margin-bottom: 0;
-    text-align: left;
+  margin: 20px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 li {
-    margin: 10px auto;
+  margin: 10px auto;
 }
-  

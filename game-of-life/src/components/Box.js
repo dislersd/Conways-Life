@@ -1,7 +1,8 @@
 import React from "react";
 
 function Box({ row, col, boxClass, id, selectBox }) {
-  const changeBox = () => {
+  
+    const changeBox = () => {
     selectBox(row, col);
   };
 

@@ -2,8 +2,8 @@ import React from "react";
 import Box from "./Box";
 
 function Grid({ cols, rows, grid, selectBox }) {
-  // width is collumns multiplied by 9 (because boxes are 9px wide)
-  const width = cols * 9;
+  // width is collumns multiplied by 8 (because boxes are 8px wide)
+  const width = cols * 8;
   var rowsArr = [];
   var boxClass = "";
 
