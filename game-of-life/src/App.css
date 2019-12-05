@@ -65,6 +65,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(233, 148, 108);
+  margin-right: 5px;
 }
 
 .words a:hover {
@@ -78,6 +79,10 @@ a {
 .buttons {
   display: flex;
   margin-left: 20px;
+}
+
+.ghIcon {
+  font-size: 30px;
 }
 
 button {

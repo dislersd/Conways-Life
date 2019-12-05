@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Grid from "../components/Grid";
 import { useInterval } from "../hooks/useInterval";
+import { GoMarkGithub } from "react-icons/go";
 
 function Home() {
   // State
@@ -177,7 +178,7 @@ function Home() {
             was implemented using the React useState hook.
           </p>
 
-          <a href="https://github.com/dislersd/Conways-Life/tree/dylan-dislers"> Check out the repo on GitHub</a>
+          <a href="https://github.com/dislersd/Conways-Life/tree/dylan-dislers"> Check out the repo on GitHub <GoMarkGithub className="ghIcon"/></a> 
         </div>
       </div>
     </>
